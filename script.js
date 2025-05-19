@@ -1719,7 +1719,251 @@ document.addEventListener('DOMContentLoaded', function() {
                 { icon: '📝', title: '文章生成', desc: '様々な形式の文章を高品質に生成' },
                 { icon: '🔄', title: '継続的改善', desc: '対話を通じて回答の質を向上' }
             ]
+        },
+        // --- ユギさん紹介ツール追加ここから ---
+        nijijourney: {
+            name: 'NijiJourney',
+            icon: '🖼️',
+            description: 'アニメ・イラスト特化型の画像生成AI。Midjourneyの姉妹サービス。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: 'https://nijijourney.com/',
+            features: ['アニメ・イラスト特化', '高品質生成', 'スタイル制御', 'コミュニティ機能'],
+            usage: ['アニメ風イラスト生成', 'キャラクターデザイン', 'アイデアの可視化', 'コミュニティでの作品共有'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: 'アニメ・イラスト特化', desc: 'アニメ・イラストに特化した高品質な画像生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        flux: {
+            name: 'FLUX',
+            icon: '🖼️',
+            description: '高品質な画像生成AI。詳細情報準備中。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: 'https://flux-ai.co/',
+            features: ['高品質画像生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな画像生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: '高品質生成', desc: '高品質な画像を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        magnific: {
+            name: 'Magnific',
+            icon: '🖼️',
+            description: '画像の高精細化・拡大AI。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: 'https://magnific.ai/',
+            features: ['高精細化', '拡大', 'ノイズ除去', 'バッチ処理'],
+            usage: ['画像の高精細化', '画像の拡大', 'ノイズ除去', '一括処理による効率化'],
+            tips: ['目的に応じた設定選択', 'バッチ処理で効率化', 'AIの特性を理解して活用', '編集履歴を活用した改善'],
+            grPoints: [{ icon: '🎨', title: '高精細化', desc: '画像を高精細に変換' }, { icon: '🔄', title: '拡大', desc: '画像を拡大し、ノイズを除去' }, { icon: '⚡', title: '効率化', desc: 'バッチ処理で大量の画像を効率的に処理' }]
+        },
+        skybox: {
+            name: 'SkyBox',
+            icon: '🌄',
+            description: '360度パノラマ画像生成AI。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: 'https://skybox.blockadelabs.com/',
+            features: ['360度パノラマ生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['360度パノラマ画像生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: '360度パノラマ生成', desc: '360度パノラマ画像を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        kling: {
+            name: 'KLING',
+            icon: '🎬',
+            description: '高品質な動画生成AI。詳細情報準備中。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: 'https://kling.ai/',
+            features: ['高品質動画生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな動画生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎬', title: '高品質動画生成', desc: '高品質な動画を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        runway: {
+            name: 'Runway',
+            icon: '🎬',
+            description: '動画生成・編集AI。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: 'https://runwayml.com/',
+            features: ['動画生成', '動画編集', 'スタイル制御', 'バリエーション生成'],
+            usage: ['クリエイティブな動画生成', '動画の編集・加工', 'スタイルの転換と適用', '一括処理による効率化'],
+            tips: ['目的に応じたスタイル選択', '編集履歴を活用した改善', 'バッチ処理で効率化', 'AIの特性を理解して活用'],
+            grPoints: [{ icon: '🎬', title: '動画生成・編集', desc: '動画生成・編集をAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '⚡', title: '効率化', desc: 'バッチ処理で大量の動画を効率的に処理' }]
+        },
+        lumaray2: {
+            name: 'LUMARay2',
+            icon: '🎬',
+            description: '動画生成AI。詳細情報準備中。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: '',
+            features: ['高品質動画生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな動画生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎬', title: '高品質動画生成', desc: '高品質な動画を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        veo2: {
+            name: 'Veo2',
+            icon: '🎬',
+            description: 'Googleの高品質動画生成AI。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: 'https://deepmind.google/technologies/veo/',
+            features: ['高品質動画生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな動画生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎬', title: '高品質動画生成', desc: '高品質な動画を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        pika: {
+            name: 'PIKA',
+            icon: '🎬',
+            description: '動画生成AI。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: 'https://pika.art/',
+            features: ['高品質動画生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな動画生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎬', title: '高品質動画生成', desc: '高品質な動画を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        wonderstudio: {
+            name: 'WonderStudio',
+            icon: '🎬',
+            description: 'AIによる自動モーショントラッキング・動画編集。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: 'https://wonderdynamics.com/',
+            features: ['自動モーショントラッキング', '動画編集', 'スタイル制御', 'バリエーション生成'],
+            usage: ['クリエイティブな動画生成', '動画の編集・加工', 'スタイルの転換と適用', '一括処理による効率化'],
+            tips: ['目的に応じたスタイル選択', '編集履歴を活用した改善', 'バッチ処理で効率化', 'AIの特性を理解して活用'],
+            grPoints: [{ icon: '🎬', title: '自動モーショントラッキング', desc: '動画の自動モーショントラッキング・編集をAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '⚡', title: '効率化', desc: 'バッチ処理で大量の動画を効率的に処理' }]
+        },
+        sora: {
+            name: 'Sora',
+            icon: '🎬',
+            description: 'OpenAIの高品質動画生成AI。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: 'https://openai.com/sora',
+            features: ['高品質動画生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな動画生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎬', title: '高品質動画生成', desc: '高品質な動画を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        beeble: {
+            name: 'Beeble',
+            icon: '🎬',
+            description: '動画生成AI（中国発）。詳細情報準備中。',
+            categories: ['動画生成', 'AIクリエイティブ'],
+            website: '',
+            features: ['高品質動画生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな動画生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎬', title: '高品質動画生成', desc: '高品質な動画を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        fal: {
+            name: 'FAL',
+            icon: '🖼️',
+            description: '画像生成AI。詳細情報準備中。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: 'https://fal.ai/',
+            features: ['高品質画像生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな画像生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: '高品質生成', desc: '高品質な画像を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        pixvearce: {
+            name: 'PixVearce',
+            icon: '🖼️',
+            description: '画像生成AI。詳細情報準備中。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: '',
+            features: ['高品質画像生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな画像生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: '高品質生成', desc: '高品質な画像を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        hix: {
+            name: 'HIX',
+            icon: '🖼️',
+            description: '画像生成AI。詳細情報準備中。',
+            categories: ['画像生成', 'AIクリエイティブ'],
+            website: 'https://hix.ai/',
+            features: ['高品質画像生成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな画像生成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: '高品質生成', desc: '高品質な画像を生成' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        openai_voice: {
+            name: 'OpenAI Voice',
+            icon: '🔊',
+            description: 'OpenAIの音声合成・認識API。',
+            categories: ['音声', 'AIクリエイティブ'],
+            website: 'https://platform.openai.com/docs/guides/speech',
+            features: ['音声合成', '音声認識', 'スタイル制御', 'バリエーション生成'],
+            usage: ['クリエイティブな音声合成', '音声認識・変換', 'スタイルの転換と適用', '一括処理による効率化'],
+            tips: ['目的に応じたスタイル選択', '編集履歴を活用した改善', 'バッチ処理で効率化', 'AIの特性を理解して活用'],
+            grPoints: [{ icon: '🔊', title: '音声合成・認識', desc: '音声合成・認識をAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '⚡', title: '効率化', desc: 'バッチ処理で大量の音声を効率的に処理' }]
+        },
+        rvc: {
+            name: 'RVC',
+            icon: '🎤',
+            description: '音声変換AI（歌声・声質変換）。',
+            categories: ['音声', 'AIクリエイティブ'],
+            website: 'https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI',
+            features: ['音声変換', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな音声変換', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎤', title: '音声変換', desc: '高品質な音声変換を実現' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        elevenlabs: {
+            name: 'ElevenLabs',
+            icon: '🔊',
+            description: '高品質なAI音声合成サービス。',
+            categories: ['音声', 'AIクリエイティブ'],
+            website: 'https://elevenlabs.io/',
+            features: ['高品質音声合成', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブな音声合成', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🔊', title: '高品質音声合成', desc: '高品質な音声合成を実現' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        frola: {
+            name: 'FROLA',
+            icon: '📝',
+            description: 'AIノート・リサーチ支援ツール。詳細情報準備中。',
+            categories: ['リサーチ', 'AIクリエイティブ'],
+            website: '',
+            features: ['リサーチ支援', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブなリサーチ', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '📝', title: 'リサーチ支援', desc: 'リサーチをAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        hhustrator: {
+            name: 'HHustrator',
+            icon: '🎨',
+            description: 'イラスト・デザインツール。詳細情報準備中。',
+            categories: ['イラスト', 'AIクリエイティブ'],
+            website: '',
+            features: ['イラスト・デザイン', 'スタイル制御', 'バリエーション生成', 'コミュニティ機能'],
+            usage: ['クリエイティブなイラスト・デザイン', 'アートワークの制作', 'デザイン素材の作成', 'アイデアの可視化'],
+            tips: ['プロンプトを具体的に記述', 'スタイル指定を活用', 'バリエーションを生成して選択', 'コミュニティの知見を参考に'],
+            grPoints: [{ icon: '🎨', title: 'イラスト・デザイン', desc: 'イラスト・デザインをAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '🤝', title: 'コミュニティ', desc: 'クリエイター同士の知見共有と学び' }]
+        },
+        clipdrop: {
+            name: 'CLIPDROP',
+            icon: '✂️',
+            description: 'AI画像編集・背景除去・拡張ツール。',
+            categories: ['画像編集', 'AIクリエイティブ'],
+            website: 'https://clipdrop.co/',
+            features: ['画像編集', '背景除去', '拡張', 'バッチ処理'],
+            usage: ['クリエイティブな画像編集', '背景除去', '拡張', '一括処理による効率化'],
+            tips: ['目的に応じた設定選択', 'バッチ処理で効率化', 'AIの特性を理解して活用', '編集履歴を活用した改善'],
+            grPoints: [{ icon: '✂️', title: '画像編集', desc: '画像編集・背景除去・拡張をAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '⚡', title: '効率化', desc: 'バッチ処理で大量の画像を効率的に処理' }]
+        },
+        adobeaftereffects: {
+            name: 'Adobe After Effects',
+            icon: '🎞️',
+            description: '映像編集・モーショングラフィックス制作ソフト。',
+            categories: ['映像編集', 'クリエイティブ'],
+            website: 'https://www.adobe.com/jp/products/aftereffects.html',
+            features: ['映像編集', 'モーショングラフィックス', 'スタイル制御', 'バッチ処理'],
+            usage: ['クリエイティブな映像編集', 'モーショングラフィックス制作', 'スタイルの転換と適用', '一括処理による効率化'],
+            tips: ['目的に応じたスタイル選択', '編集履歴を活用した改善', 'バッチ処理で効率化', 'AIの特性を理解して活用'],
+            grPoints: [{ icon: '🎞️', title: '映像編集・モーショングラフィックス', desc: '映像編集・モーショングラフィックスをAIで効率化' }, { icon: '🔄', title: 'スタイル制御', desc: '様々なスタイルや表現を実現可能' }, { icon: '⚡', title: '効率化', desc: 'バッチ処理で大量の映像を効率的に処理' }]
         }
+        // --- ユギさん紹介ツール追加ここまで ---
     };
     
     function openToolModal(toolId) {
@@ -1740,10 +1984,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="tool-detail-header">
                     <div class="tool-detail-icon">${toolData.icon}</div>
                     <h2 class="tool-detail-name">${toolData.name}</h2>
-                    <div class="tool-categories">
+                        <div class="tool-categories">
                         ${toolData.categories.map(category => `<span class="tool-category">${category}</span>`).join('')}
+                        </div>
                     </div>
-                </div>
                 <div class="tool-detail-tabs">
                     <button class="tool-tab active" data-tab="about">できること</button>
                     <button class="tool-tab" data-tab="usage">使い方</button>
@@ -1751,16 +1995,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     <button class="tool-tab" data-tab="gr">グラレコ</button>
                 </div>
                 <div class="tool-tab-content tool-tab-about active">
-                    <div class="tool-detail-description">
+                        <div class="tool-detail-description">
                         <p>${toolData.description}</p>
-                    </div>
-                    <div class="tool-features">
-                        <h3 class="tool-feature-title">主な特徴</h3>
-                        <ul class="tool-feature-list">
+                        </div>
+                        <div class="tool-features">
+                            <h3 class="tool-feature-title">主な特徴</h3>
+                            <ul class="tool-feature-list">
                             ${toolData.features.map(feature => `<li>${feature}</li>`).join('')}
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 <div class="tool-tab-content tool-tab-usage">
                     <h3>主な使い方</h3>
                     <ul class="tool-usage-list">
@@ -1786,7 +2030,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 ${toolData.website ? `<a href="${toolData.website}" target="_blank" class="tool-link">公式サイトを開く</a>` : ''}
-            </div>
+                    </div>
         `;
         toolModal.classList.add('active');
 
